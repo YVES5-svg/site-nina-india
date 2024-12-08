@@ -31,3 +31,8 @@
     window.location.href = 'https://wa.me/695730679'; // Redirige vers le compte WhatsApp
   });
   
+
+  document.getElementById('nav').addEventListener('click', function(event) {
+    event.preventDefault(); // Empêche le comportement par défaut du lien
+    window.location.href = 'https://wa.me/695730679'; // Redirige vers l'inbox WhatsApp
+  });

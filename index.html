@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.87.0">
-    <title>Acceuil · logo</title>
+    <title>Acceuil · yves services</title>
     <link rel="icon" href="img/logo.png"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +17,10 @@
 <link href="style/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      .logo { 
+        border-radius: 100%;
+      width: 150px; /* Ajustez la taille selon vos besoins */ height: auto;  top: 10px; /* Positionnez le logo selon vos besoins */ left: 10px; }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -31,12 +35,35 @@
         }
       }
       @media (max-width: 768px) {
-        img{
-           margin-left: 30%;
-           position: relative;
+        #cont{
+          display: flex;
+          flex-direction: column;
+           
           }
           
       }
+
+      #bloc li:hover{
+ color: red;
+ transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+#bloc1{
+  position: fixed;
+margin-left: 26%;
+  padding: 3%;
+  background-color:rgb(48, 20, 49);
+  border-radius: 10px;
+  color: beige;
+  box-shadow: burlywood 5px;
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+#bloc1 li:hover{
+ color: red;
+ transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
     </style>
 
     
@@ -51,14 +78,14 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
     <div class="container-fluid">
-      <img src="img/logo.png"width="140px">
+    <video class="logo" autoplay loop muted> <source src="img/video/vid.mp4" type="video/mp4" width="60px"> </video>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item" >
-            <a class="nav-link active"  href="#"id="m1"><i class="fa-solid fa-house fa-lg"></i> Aaaacceuil</a>
+            <a class="nav-link active"  href="#"id="m1"><i class="fa-solid fa-house fa-lg"></i> Acceuil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#"id="m2"><i class="fa-solid fa-briefcase fa-lg"></i>  Nos services</a>
@@ -73,7 +100,7 @@
         </div>    ''
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="rechercher un service" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">rechercher</button>
+          <button class="btn btn-outline-success" type="submit"> <i class="fa-solid fa-user"></i>  s'inscrire</button>
         </form>
       </div>
     </div>
@@ -102,6 +129,38 @@ animation: design infinite;
       }
       
     }
+    #bloc{
+  position:fixed;
+margin-left: 12%;
+  padding: 1%;
+  background-color:rgb(48, 20, 49);
+  border-radius: 10px;
+  color: beige;
+  box-shadow: burlywood 5px;
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+#bloc li:hover{
+ color: red;
+ transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+#bloc1{
+  position: fixed;
+margin-left: 26%;
+  padding: 3%;
+  background-color:rgb(48, 20, 49);
+  border-radius: 10px;
+  color: beige;
+  box-shadow: burlywood 5px;
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+#bloc1 li:hover{
+ color: red;
+ transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
 </style>
 <main>
 
@@ -111,6 +170,19 @@ animation: design infinite;
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+    <div id="bloc">
+      <a href="pages/logo.html"> <li>creations des logos</li></a>
+       <a href='pages/site.html'><li>creation des sites internet</li></a>
+       <li>creations des applications de gestions</li>
+       <li>creation des flyers & affiche</li>
+       <li>Autres services...</li>
+     </div>
+   
+     <div id="bloc1">
+       <li>Politique interne</li>
+       <li>nos coordonnees</li>
+       <li>Aide et FAQ</li>
+     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         
@@ -118,7 +190,7 @@ animation: design infinite;
           <div class="carousel-caption">
             <h1>montage photos et videos</h1>
             <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#"id="nav">voir les modeles disponibes</a></p>
+            <p><a class="btn btn-lg btn-primary" href="pages/logo.html"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voir les modeles disponibes</a></p>
           </div>
         </div>
       </div>
@@ -127,9 +199,9 @@ animation: design infinite;
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>creation des applications web</h1>
+            <h1>creation des sites web</h1>
             <p>creer votre aplication web pour aporter de la visibilite de votre activite!</p>
-            <p><a class="btn btn-lg btn-primary" href="#"id="nav">voire le modeles disponible</a></p>
+            <p><a class="btn btn-lg btn-primary" href="pages/site.html"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voire les modeles disponible</a></p>
           </div>
         </div>
       </div>
@@ -139,7 +211,7 @@ animation: design infinite;
           <div class="carousel-caption">
             <h1>creation des applications de gestion</h1>
             <p>booster la production de votre activiter avec une application de gestion!</p>
-            <p><a class="btn btn-lg btn-primary" href="#"id="nav">voir les modeles disponible</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voir les modeles disponible</a></p>
           </div>
         </div>
       </div>
@@ -153,19 +225,7 @@ animation: design infinite;
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div id="bloc">
-   <a href="pages/logo.html"> <li>creations des sites internet</li></a>
-    <li>creation des aplications de gestin</li>
-    <li>creations des lodos</li>
-    <li>creation des flyers & affiche</li>
-    <li>Autres services...</li>
-  </div>
-
-  <div id="bloc1">
-    <li>Politique interne</li>
-    <li>nos coordonnees</li>
-    <li>Aide et FAQ</li>
-  </div>
+  
   <div class="container px-4 py-5" id="custom-cards">
     <h2 class="pb-2 border-bottom">Services en promotions chez nous!</h2>
 
@@ -253,10 +313,7 @@ animation: design infinite;
         </div>
         <h2>Respect des delais</h2>
         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Voir notre politique interne
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-        </a>
+        <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-solid fa-circle-info fa-lg" style="color: #63E6BE;"></i> voire notre politique interne</a></p>
       </div>
       <div class="feature col">
         <div class="feature-icon ">
@@ -264,10 +321,7 @@ animation: design infinite;
         </div>
         <h2>Services bien fait</h2>
         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          voire la politique interne
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-        </a>
+        <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-solid fa-circle-info fa-lg" style="color: #63E6BE;"></i> voire nos regles d'ethique</a></p>
       </div>
       <div class="feature col">
         <div class="feature-icon ">
@@ -275,10 +329,7 @@ animation: design infinite;
         </div>
         <h2>respect de la privee</h2>
         <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          voire la politique interne
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-        </a>
+        <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-solid fa-circle-info fa-lg" style="color: #63E6BE;"></i> politique de confidentialites</a></p>
       </div>
     </div>
   </div>
@@ -289,76 +340,79 @@ animation: design infinite;
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="img/perso3.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
 
         <h2>Mr. Fofou yves </h2>
         <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-brands fa-whatsapp fa-lg" style="color: #63E6BE;"></i> Ecrire inbox</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="img/perso1.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
 
         <h2>Heading</h2>
         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-brands fa-whatsapp fa-lg" style="color: #63E6BE;"></i> Ecrire inboxe</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="img/perso2.avif" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
 
         <h2>Heading</h2>
         <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-brands fa-whatsapp fa-lg" style="color: #63E6BE;"></i> Ecrire inbox</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
-<p></p>
+  
 
     <!-- START THE FEATURETTES -->
-    <h2 class="pb-2 border-bottom">Ursez de la magie du digital pour booster votre activite!!</h2>
-   
+     
+    <hr class="featurette-divider">
+    <h2 class="pb-2 border-bottom">Ursez de la magie du digital pour booster vos activite!!</h2>
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Creations des sites internet tailles a votre mesure</h2>
-        <p class="lead">Apportez de la visibilite a votre activites en la diffusant sur internet.</p>
+        <h2 class="featurette-heading">Creqtion des sites internet. <span class="text-muted">wordpress, statique, dynamique.</span></h2>
+        <p class="lead">faites vous creer un site internet intuitif, atractif et tailler a votre mesure afin d'apporter la visibilites necessaire a votre activites.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://wa.me/695730679" id="nav"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i> voir toutes les modalités de création</a></p>
       </div>
       <div class="col-md-5">
-        <img src="img/site.jpg"width="440px" height="500px">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">creation des applications de gestion.<span class="text-muted"></span></h2>
-        <p class="lead">Misez sur le numerique! et accordez lui une place de choix dans le fonctionnement de votre entreprise en creant une application de gestion qui vous permettra de booster le rendement de votre entreprise! </p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="img/aw.png"width="440px" height="500px">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-   
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Services dans le domaine de l'infographie</h2>
-        <p class="lead">L'Art du parraitre! soignez votre visibilte en vous fesant concevoir des : logos, flyers, montages photos & videos...ects </p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="img/info.jpg"width="440px" height="500px">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-     
-    
-
-      </div>
-    </div>
+        <img src="img/info.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
 
     
+    
+      </div>
+    </div>
+
+<hr class="featurette-divider">
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading">Creation des application de gestion. <span class="text-muted">Application de gestion de stockes, d'automatisation des taches ...</span></h2>
+    <p class="lead">Une aplication de gestion est capitale pour l'evolution de votre activites car elle vous permettra de ganer en temps et en main doeuvre .</p>
+   <p><a class="btn btn-lg btn-primary" href="https://wa.me/695730679" id="nav"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i> voir toutes les modalités de création</a></p>
+  </div>
+  <div class="col-md-5">
+    <img src="img/site.jpg"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"/>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+
+ 
+  <div class="col-md-7">
+    <h2 class="featurette-heading">Creation de contenue graphique. <span class="text-muted">flyers, logos, carte de visite, billet d'invitation...</span></h2>
+    <p class="lead">misez sur l'image pour garantir le succes de votre entreprise en vous fesant creer un contenue graphique attreingnant qui traduit toutes les valeurs que traduit votre activites.</p>
+   <p><a class="btn btn-lg btn-primary" href="https://wa.me/695730679" id="nav"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i> voir toutes les modalités de création</a></p>
+
+  </div>
+  <div class="col-md-5">
+    <img src="img/site.jpg"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">   
     <p></p>
     <main>
       
@@ -414,7 +468,7 @@ overflow: hidden;
     <script src="scripts/index.js"></script>
   </body>
   <footer>
-    <div class="container">
+    <div class="container" id="cont">
       <footer class="py-5">
         <div class="row">
           <div class="col-2">
@@ -467,10 +521,11 @@ overflow: hidden;
         <div class="d-flex justify-content-between py-4 my-4 border-top">
           <p>&copy; 2024 Technologie, Inc. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #74C0FC;"></i><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-youtube fa-lg" style="color: #f70844;"></i><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #74C0FC;"></i><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
           </ul>
         </div>
       </footer>
+    </div>
 </html>

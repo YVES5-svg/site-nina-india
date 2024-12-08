@@ -17,6 +17,10 @@
 <link href="../style/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      small{
+        color: red;
+        border-bottom: 2px red;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -32,7 +36,7 @@
       }
       @media (max-width: 768px) {
         img{
-           margin-left: 30%;
+           
            position: relative;
           }
           
@@ -48,18 +52,25 @@
     <link href="../style/footers.css" rel="stylesheet">
   </head>
   <body>
-    
+    <style>
+      #m2{
+          color: red;
+      }
+      #m1{
+          color:white
+      }
+  </style>
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
     <div class="container-fluid">
-      <img src="../img/logo.png"width="140px">
+      <img src="../img/logo.png"width="50px">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item" >
-            <a class="nav-link active"  href="#"id="m1"><i class="fa-solid fa-house fa-lg"></i> Acceuil</a>
+            <a class="nav-link active"  href="../index.html"id="m1"><i class="fa-solid fa-house fa-lg"></i> Acceuil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#"id="m2"><i class="fa-solid fa-briefcase fa-lg"></i>  Nos services</a>
@@ -106,6 +117,9 @@ animation: design infinite;
       }
       
     }
+    #text{
+      color: red;
+    }
 </style>
 <main>
 
@@ -114,6 +128,19 @@ animation: design infinite;
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div id="bloc">
+      <li>creations des sites internet</li>
+      <li>creation des aplications de gestin</li>
+      <li>creations des lodos</li>
+      <li>creation des flyers & affiche</li>
+      <li>Autres services...</li>
+    </div>
+  
+    <div id="bloc1">
+      <li>Politique interne</li>
+      <li>nos coordonnees</li>
+      <li>Aide et FAQ</li>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -157,21 +184,9 @@ animation: design infinite;
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div id="bloc">
-    <li>creations des sites internet</li>
-    <li>creation des aplications de gestin</li>
-    <li>creations des lodos</li>
-    <li>creation des flyers & affiche</li>
-    <li>Autres services...</li>
-  </div>
-
-  <div id="bloc1">
-    <li>Politique interne</li>
-    <li>nos coordonnees</li>
-    <li>Aide et FAQ</li>
-  </div>
+ 
     </main>
-<main>
+
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
@@ -180,110 +195,58 @@ animation: design infinite;
         </div>
       </div>
     </section>
-  
+ 
     <div class="album py-5 bg-light">
       <div class="container">
-  
+        <h2> <i class="fa-solid fa-star fa-beat-fade fa-lg" style="color: #FFD43B;"></i> Pictogrammes: icônes ou dessins schématiques représentant un objet réel.</h2><hr>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
-              <img src="../img/logo1.jpeg"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+             
+              <img src="../img/logo1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
 
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text" id="text">prix: 5000fcfa</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="../img/logo3.jpg"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+             
+              <img src="../img/logo3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
   
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text" id="text">prix: 5000fcfa</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="../img/logo14.webp"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+              <img src="../img/logo14.webp" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
   
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i> s'offrir le service</button>
+                    
                   </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="../img/logo5.jpeg"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="../img/logo6.jpeg"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-                <img src="../img/logo7.png"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text">prix: 5000f</small>
                 </div>
               </div>
             </div>
@@ -291,51 +254,103 @@ animation: design infinite;
   
           <div class="col">
             <div class="card shadow-sm">
-                <img src="../img/logo8.jpeg"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              
+              <img src="../img/logo5.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
   
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text" id="text">prix: 5000fcfa</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="../img/logo9.jpg"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                
+              <img src="../img/logo6.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
   
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text" id="text">prix: 5000fcfa</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-                <img src="../img/logo16.jpeg"width="100%" height="225">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              
+              <img src="../img/logo7.png" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
   
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text" id="text">prix: 5000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+                
+              <img src="../img/logo8.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+               
+              <img src="../img/logo9.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+            
+              <img src="../img/logo16.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5000fcfa</small>
                 </div>
               </div>
             </div>
@@ -344,7 +359,519 @@ animation: design infinite;
       </div>
     </div>
   
-  </main>
+  
+
+
+
+
+
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h2> <i class="fa-solid fa-star fa-beat-fade fa-lg" style="color: #FFD43B;"></i> Logos abstraits : transmettent un concept ou une idée générale.</h2><hr>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+             
+              <img src="../img/logo1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             
+              <img src="../img/logo3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+    
+              <img src="../img/logo14.webp" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              
+              <img src="../img/logo5.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                
+              <img src="../img/logo6.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              
+              <img src="../img/logo7.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+                
+              <img src="../img/logo8.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"/>
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+               
+              <img src="../img/logo9.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+            
+              <img src="../img/logo16.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 5500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h2><i class="fa-solid fa-star fa-beat-fade fa-lg" style="color: #FFD43B;"></i> Mascottes : personnages ou animaux utilisés comme symboles.</h2><hr>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+             
+              <img src="../img/logo1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             
+              <img src="../img/logo3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+    
+              <img src="../img/logo14.webp" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              
+              <img src="../img/logo5.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                
+              <img src="../img/logo6.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              
+              <img src="../img/logo7.png" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+                
+              <img src="../img/logo8.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+               
+              <img src="../img/logo9.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+            
+              <img src="../img/logo16.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6000fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h2> <i class="fa-solid fa-star fa-beat-fade fa-lg" style="color: #FFD43B;"></i> Monogrammes : initiales ou lettres utilisées comme logo.</h2><hr>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+             
+              <img src="../img/logo1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+             
+              <img src="../img/logo3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+    
+              <img src="../img/logo14.webp" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              
+              <img src="../img/logo5.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                
+              <img src="../img/logo6.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              
+              <img src="../img/logo7.png" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+                
+              <img src="../img/logo8.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+               
+              <img src="../img/logo9.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"/> 
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+            
+              <img src="../img/logo16.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225"/>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>  s'offrire le service </button>
+          
+                  </div>
+                  <small class="text" id="text">prix: 6500fcfa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <style>
     #b1{
       background-color:rgb(48, 20, 49);
@@ -359,29 +886,14 @@ animation: design infinite;
       background-size: cover;
       color:rgb(169, 252, 54);
     }
-    #scrol{
-overflow: hidden;
-    }
-#scrol p{
  
-  animation:circul 20s infinite;
-  margin-top: 1%;
-  text-align: center;
-}
 #bout{
   text-align: center;
 }
 
 
   </style>
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
- 
-</main>
+  
 
     <script src="../scripts/bootstrap.bundle.min.js"></script>
     <script src="../scripts/index.js"></script>
