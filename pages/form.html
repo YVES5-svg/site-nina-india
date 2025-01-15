@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +10,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.87.0">
     <link rel="icon" href="../img/screen.JPG"/>
-    <title>connexion ·  grace india</title>
+    <title>inscription ·grace india</title>
 
    
     
@@ -23,7 +26,6 @@
     <link href="../style/heroes.css" rel="stylesheet">
     <link href="../style/footers.css" rel="stylesheet">
     <link href="../style/signin.css" rel="stylesheet">
-    <link href="../style/modals.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -37,28 +39,62 @@
       width: 110px;
       height: 110px; 
       }
-      #but{
-        background-color: rgb(247, 105, 204);
-        opacity: 0.8;
-        color: bisque;
-      }
-      #but:hover{
-        background-color: rgb(247, 105, 204);
-        opacity: 1;
-        color: bisque;
-      }
-      a {
-  color: rgb(12, 12, 12);
-}
 
       .nav{
   color: white;
  
 }
-#modalChoic{
- display: none;
-  color: red;
-}
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3cbe0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input[type="text"], 
+        input[type="number"], 
+        textarea, 
+        input[type="file"],select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff69b4; /* Couleur de fond rose */
+            color: #fff; /* Couleur du texte blanche */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff1493; /* Couleur de fond rose foncé au survol */
+        }
           
       .nav{
  font-size: medium;
@@ -68,6 +104,9 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+      }
+      button{
+        background-color: red;
       }
     </style>
 
@@ -97,13 +136,13 @@
             </a>
             <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
               <li><a class="dropdown-item active" href="#" aria-current="page">Ventes en gros et detaille</a></li>
-              <li><a class="dropdown-item" href="perruques.html">perruques</a></li>
-              <li><a class="dropdown-item" href="pijamas.html">pyjamas</a></li>
-              <li><a class="dropdown-item" href="nuisette.html">nuisette</a></li>
+              <li><a class="dropdown-item" href="#">perruques</a></li>
+              <li><a class="dropdown-item" href="#">pyjamas</a></li>
+              <li><a class="dropdown-item" href="#">nuisette</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="bijoux.html">bijoux</a></li>
-              <li><a class="dropdown-item" href="pentouffles.html">pentouffles</a></li>
-              <li><a class="dropdown-item" href="souvetement.html">sous vetements</a></li>
+              <li><a class="dropdown-item" href="#">bijoux</a></li>
+              <li><a class="dropdown-item" href="#">pentouffles</a></li>
+              <li><a class="dropdown-item" href="#">sous vetements</a></li>
             </ul>
           </div>
           <li class="nav-item">
@@ -114,52 +153,56 @@
           <i class="fa-brands fa-whatsapp fa-beat-fade fa-2xl" style="color: #63E6BE;"></i><span> |+237 695730679  |</span>  
           <i class="fa-brands fa-facebook fa-beat-fade fa-2xl" style="color: #74C0FC;"></i><span> |nina india officiel | </span> 
         </div>  
+         <a href="admin.html"><button class="btn btn-outline-success" type="button"> <i class="fa-solid fa-user"></i>  Retour</button></a> 
+        
       </div>
     </div>
   </nav>
 </header>
   <body class="text-center">
-
+    
 <main class="form-signin">
-  <form id="loginForm" method="post" action="connexion.php">
-    <p>.</p>
-    <p>'</p>
-    <p></p>
-    <video class="logo" autoplay loop muted> <source src="../img/video/vid.mp4" type="video/mp4" width="60px"> </video>
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  <form action="form.php" method="post" enctype="multipart/form-data" id="signupForm">
+    <p></p><p>;</p><p>.</p>
+    <video class="logo" autoplay loop muted>
+        <source src="../img/video/vid.mp4" type="video/mp4" width="60px">
+    </video>
+    <h6 class="h3 mb-3 fw-normal">Remplissez ce formulaire pour publier un article</h6>
 
-    <div class="form-floating">
-        <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" required>
-        <label for="nom">Nom</label>
-    </div>
-    <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
-        <label for="floatingPassword">Password</label>
-    </div>
+    <label for="title">Nature de l'article</label>
+    <select name="title" id="title" required>
+        <option value="perruques">Perruques</option>
+        <option value="pijamas">Pijamas</option>
+        <option value="pantoufles">Pantoufles</option>
+        <option value="bijoux">Bijoux</option>
+        <option value="sousvetements">Sous-vêtements</option>
+    </select><br>
 
-    <div class="checkbox mb-3">
-        <label>
-        <a href="signup.html">je n'ai pas de compte</a><br>
-        <a href="#">j'ai oublié mon mot de passe</a>
-        </label>
-    </div>
-    <button class="w-100 btn btn-lg " type="submit" id="but"><i class="fa-solid fa-right-to-bracket fa-fade" style="color: #f7f7f8;"></i>  Se connecter</button>
-    <p class="mt-5 mb-3 text-muted">&copy; Grace India 2025–2028</p>
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" required></textarea><br>
+
+    <label for="price">Prix:</label>
+    <input type="number" name="price" id="price" required><br>
+
+    <label for="image">Choisir une photo:</label>
+    <input type="file" name="image" id="image" required><br><br>
+   
+    <input type="submit" name="submit" value="Publier l'article">
 </form>
 
-
+</body>
+</html>
 
 
 </main>
 
-  
-
 <script src="../scripts/bootstrap.bundle.min.js"></script>
     <script src="../scripts/index.js"></script>
-    <script src="../scripts/insciptio.js"></script>
-
+   
+    
     
   </body>
 
   
 </html>
+

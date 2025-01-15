@@ -10,6 +10,7 @@
     <title>Grace india . Nuisette</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
 
@@ -19,7 +20,7 @@
 
     <style>
       #item0{
-  background-image:url('img/fonte1.png');
+  background-image:url('../img/nu1.png');
 background-repeat: no-repeat;
 background-color: rgb(241, 201, 241);
 animation: design infinite;
@@ -29,7 +30,7 @@ animation: design infinite;
     
 }
 #item1{
-  background-image:url('img/pentoufles/pen.png');
+  background-image:url('../img/nu3.png');
 background-repeat: no-repeat;
 background-color: rgb(241, 201, 241);
 animation: design infinite;
@@ -40,7 +41,7 @@ animation: design infinite;
 }
 
 #item2{
-  background-image:url('img/pijamas/pije.png');
+  background-image:url('../img/nuite.png');
 background-repeat: no-repeat;
 background-color: rgb(241, 201, 241);
 animation: design infinite;
@@ -51,7 +52,7 @@ animation: design infinite;
 }
 
 #item3{
-  background-image:url('img/rolex/bijoux.png');
+  background-image:url('../img/nu4.png');
 background-repeat: no-repeat;
 background-color: rgb(241, 201, 241);
 animation: design infinite;
@@ -62,7 +63,7 @@ animation: design infinite;
 }
 
 #item4{
-  background-image:url('img/sous.png');
+  background-image:url('../img/nu5.png');
 background-repeat: no-repeat;
 background-color: rgb(241, 201, 241);
 animation: design infinite;
@@ -73,7 +74,7 @@ animation: design infinite;
 }
 
 #item5{
-  background-image:url('img/nuite.png');
+  background-image:url('../img/nu6.png');
 background-repeat: no-repeat;
 background-color: rgb(241, 201, 241);
 animation: design infinite;
@@ -103,7 +104,16 @@ animation: design infinite;
   width: 110px;
   height: 110px; 
   }
-
+  a{
+    text-decoration: none;
+  }
+  .p1{
+  text-decoration: line-through;
+}
+.p2{
+  color: red;
+ text-decoration: underline;
+}
     </style>
 
     
@@ -111,25 +121,27 @@ animation: design infinite;
   <body>
     
 <header>
-  <div class="collapse bg-dark" id="navbarHeader">
+  <div class="collapse " id="navbarHeader">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white" class="til">Apropos de la bibiotheque des nuisette</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          <h4 class="text-white" class="til">Apropos de la bibiotheque des nuisettes</h4>
+          <p class="text-muted">chers utilisateur, toutes les articles publies dans cette pibiotheque sont belle et bien disponible a la boutique 
+            grace india, et nous diposons de tout les droits sur les images utiliser pour la circonstance !
+          </p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
+          <h4 class="text-white">Autres articles</h4>
+          <li><a href="bijoux.html" class="text-white"><i class="fa-brands fa-facebook fa-beat-fade"></i> Bijoux</a></li>
+          <li><a href="pentouffles.html" class="text-white"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i>pentouffles</a></li>
+          <li><a href="perruques.html" class="text-white"><i class="fa-brands fa-facebook fa-beat-fade"></i> perruques</a></li>
+            <li><a href="pijamas.html" class="text-white"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i> pijamas</a></li>
+            <li><a href="souvetement.html" class="text-white"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i> sous-vetements</a></li>
         </div>
       </div>
     </div>
   </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="navbar navbar-dark  shadow-sm" id="bgd">
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <video class="logo" autoplay loop muted> <source src="../img/video/vid.mp4" type="video/mp4" width="60px"> </video>
@@ -144,7 +156,7 @@ animation: design infinite;
 
 
 
-<strong class="til">Bijoux populaires !</strong>
+<strong class="til">nuisettes populaires !</strong>
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -160,27 +172,31 @@ animation: design infinite;
     <div class="carousel-item active" id="item0">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Perruques pures indiennes</h1>
-          <p>Commendez votre perruques des aujoud'hui et faites vous livrez dans votre ville de reaidence .</p>
-          <p><a class="btn btn-lg btn-primary" href="pages/logo.html"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voir les modeles disponibes</a></p>
+         
+          <h1>Rolex day/ date en or/ Hommes</h1>
+          <p>Prix: <span class="p1" > 15 000FCFA</span> - <span class="p2" >10 000FCFA</span></p>
+          <p><a href="#" class="btn btn-lg btn-primary" id="nav" onclick="window.location.href='https://wa.me/237653709282';"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i>  commander</a></p>
+          
         </div>
       </div>
     </div>
-    <div class="carousel-item"id="item1">
-      <div class="container" >
+    <div class="carousel-item " id="item1">
+      <div class="container">
         <div class="carousel-caption">
-          <h1>pentoufles de bonne qualites</h1>
-          <p>Commendez votre pentouffles des aujoud'hui et faites vous livrez dans votre ville de reaidence!</p>
-          <p><a class="btn btn-lg btn-primary" href="pages/site.html"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voire les modeles disponible</a></p>
+         
+          <h1>Rolex day/ date en or/ Femmes</h1>
+          <p>Prix: <span class="p1" > 15 000FCFA</span> - <span class="p2" >10 000FCFA</span></p>
+          <p><a href="#" class="btn btn-lg btn-primary" id="nav" onclick="window.location.href='https://wa.me/237653709282';"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i>  commander</a></p>
+          
         </div>
       </div>
     </div>
     <div class="carousel-item" id="item2">
       <div class="container">
         <div class="carousel-caption">
-          <h1>pijamas de tres bonne qualites</h1>
-          <p>Commendez votre pijamas des aujoud'hui et faites vous livrez dans votre ville de reaidence.</p>
-          <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voir les modeles disponible</a></p>
+          <h1>colier multi-couche, type coreen</h1>
+          <p>Prix: <span class="p1" > 12 000FCFA</span> - <span class="p2" >9 000FCFA</span></p>
+          <p><a href="#" class="btn btn-lg btn-primary" id="nav" onclick="window.location.href='https://wa.me/237653709282';"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i>  commander</a></p>
         </div>
       </div>
     </div>
@@ -188,9 +204,9 @@ animation: design infinite;
     <div class="carousel-item" id="item3">
       <div class="container">
         <div class="carousel-caption">
-          <h1>bijoux de tres bonne qualites</h1>
-          <p>Commendez vos bijoux des aujoud'hui et faites vous livrez dans votre ville de reaidence.</p>
-          <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voir les modeles disponible</a></p>
+          <h1>Boucles d'oreilles GINNY - Calyssandra</h1>
+          <p>Prix: <span class="p1" > 5 000FCFA</span> - <span class="p2" >3 000FCFA</span></p>
+          <p><a href="#" class="btn btn-lg btn-primary" id="nav" onclick="window.location.href='https://wa.me/237653709282';"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i>  commander</a></p>
         </div>
       </div>
     </div>
@@ -198,9 +214,9 @@ animation: design infinite;
     <div class="carousel-item" id="item4">
       <div class="container">
         <div class="carousel-caption">
-          <h1>sous vetements de tres bonne qualites</h1>
-          <p>Commendez vos sous vetements des aujoud'hui et faites vous livrez dans votre ville de reaidence.</p>
-          <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voir les modeles disponible</a></p>
+          <h1>Boucles d'oreilles Plaqué Or Cyclone | GoldCenter</h1>
+          <p>Prix: <span class="p1" > 6 000FCFA</span> - <span class="p2" >2 500FCFA</span></p>
+          <p><a href="#" class="btn btn-lg btn-primary" id="nav" onclick="window.location.href='https://wa.me/237653709282';"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i>  commander</a></p>
         </div>
       </div>
     </div>
@@ -208,9 +224,9 @@ animation: design infinite;
     <div class="carousel-item" id="item5">
       <div class="container">
         <div class="carousel-caption">
-          <h1>nuisette de tres bonne qualites</h1>
-          <p>Commendez vos nuisette des aujoud'hui et faites vous livrez dans votre ville de reaidence.</p>
-          <p><a class="btn btn-lg btn-primary" href="#"id="nav"> <i class="fa-solid fa-eye fa-lg" style="color: #f4f7fa;"></i> voir les modeles disponible</a></p>
+          <h1>Pandora Moments Studded Chain Bracelet | Gold plated | Pandora NZ</h1>
+          <p>Prix: <span class="p1" > 7 000FCFA</span> - <span class="p2" >5 000FCFA</span></p>
+          <p><a href="#" class="btn btn-lg btn-primary" id="nav" onclick="window.location.href='https://wa.me/237653709282';"> <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #63E6BE;"></i>  commander</a></p>
         </div>
       </div>
     </div>
@@ -232,168 +248,27 @@ animation: design infinite;
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <h1 class="fw-light">Album des sous-vetements @grace india</h1>
+        <p class="lead text-muted">sur cette pages, vous trouverez tout les nuisettes qui sont en vente chez grace india .</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+            <form>
+              <label for="title">filtrez votre resulat</label>
+    <select name="title" id="title" required>
+        <option value="perruques">slip femmes taille: xl</option>
+        <option value="pijamas"> slip femmes taille : xxl</option>
+        <option value="pantoufles"> slip femmes taille: xxxl</option>
+        <option value="bijoux">boxeur homme: xl</option>
+        <option value="sousvetements">boxeur hommes : xxl</option>
+        <option value="sousvetements">soutien gorge taille  : xxl</option>
+
+    </select>
+    <button type="submit" class="btn btn-primary my-2">filtrer</button>
+            </form> 
       </div>
-    </div>
   </section>
 
   <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="container"> <!-- Existing publications will be here --> </div><!-- End of container class -->
   </div>
 
 </main>
