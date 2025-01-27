@@ -155,6 +155,71 @@
           </button>
         </div>
       </div>
+      <?php
+// Connexion à la base de données
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "nina_bd";
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Suppression de la commande
+if (isset($_GET['delete'])) {
+    $id = $_GET['delete'];
+    $table = $_GET['table'];
+    
+    // Suppression du fichier image
+    $sql = "SELECT image_path FROM $table WHERE id='$id'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    if (file_exists($row['image_path'])) {
+        unlink($row['image_path']);
+    }
+    
+    // Suppression de l'enregistrement de la base de données
+    $sql = "DELETE FROM $table WHERE id='$id'";
+    if ($conn->query($sql) === TRUE) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error deleting record: " . $conn->error;
+    }
+}
+
+// Récupération des commandes
+$tables = ['bijoux', 'perruque', 'pijamas', 'pantoufles', 'sous_vetements'];
+foreach ($tables as $table) {
+    $sql = "SELECT * FROM $table";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<h2>" . ucfirst($table) . "</h2>";
+        while ($row = $result->fetch_assoc()) {
+            echo "
+                <div class=\"col\">
+                    <img src='" . $row['image_path'] . "' alt='" . $row['title'] . "' width='300'>
+                    <div class=\"card-body\">
+                        <p class=\"card-text\">" . $row['description'] . "</p>
+                        <div class=\"d-flex justify-content-between align-items-center\">
+                            <div class=\"btn-group\">
+                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\" onclick=\"window.location.href='https://wa.me/237653709282';\"><i class=\"fa-brands fa-whatsapp fa-lg\" style=\"color: #63E6BE;\"></i> Commander</button>
+                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Liker</button>
+                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\" onclick=\"window.location.href='?delete=" . $row['id'] . "&table=" . $table . "'\">Supprimer</button>
+                            </div>
+                            <small class=\"text-muted\">prix: " . $row['price'] . " fcfa</small>
+                        </div>
+                    </div>
+                </div>";
+        }
+    } else {
+        echo "0 results for $table";
+    }
+}
+
+$conn->close();
+?>
 
       <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
