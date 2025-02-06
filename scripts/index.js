@@ -1,5 +1,4 @@
-
-  document.getElementById('m2').addEventListener('mouseover', function() {
+document.getElementById('m2').addEventListener('mouseover', function() {
     let bloc = document.getElementById('bloc');
     bloc.style.display="block";
     m2.style.color='red';
@@ -36,3 +35,5 @@
     event.preventDefault(); // Empêche le comportement par défaut du lien
     window.location.href = 'https://wa.me/695730679'; // Redirige vers l'inbox WhatsApp
   });
+
+  

@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Vérifier si l'utilisateur est l'administrateur
     if ($nom === 'fofou6 nina' && $password === 'nina12') {
         $_SESSION['user'] = $nom;
-        header('Location: admin.html');
+        header('Location: admin.php');
         exit();
     }
 
